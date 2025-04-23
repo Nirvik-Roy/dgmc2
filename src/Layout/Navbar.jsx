@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/939610874_dream.png'
 import { NavLink } from 'react-router-dom'
 import world from '../assets/world.png'
+import Sidebar from './Sidebar'
+
 const Navbar = () => {
+    const [nav,setnav]=useState(false)
     return (
         <>
+ <Sidebar nav={nav} setnav={setnav}/>
             <div className='nav_wrapper'>
 
                 <div className='nav_wrapper_main universal_container'>
@@ -20,7 +24,7 @@ const Navbar = () => {
                             <NavLink>Start Campaign</NavLink>
                         </div>
                     </div>
-
+                    <i onClick={(()=>{setnav(!nav)})} class="fa-solid fa-bars-staggered"></i>
                     <div className='nav_buttons_wrapper'>
                         <div className='currency_slect_div'>
                             <div className='currency_city_circle'>

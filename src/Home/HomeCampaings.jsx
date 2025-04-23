@@ -11,7 +11,50 @@ import img from '../assets/photo-1542810634-71277d95dcbb.avif'
 import img2 from '../assets/nathan-dumlao-Xavq7lKj5j8-unsplash.jpg'
 import img3 from '../assets/photo-1488521787991-ed7bbaae773c.avif'
 import img4 from '../assets/photo-1567001766755-3a3775614445.avif'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 const HomeCampaings = () => {
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows:true,
+     
+        autoplay:true,
+        autoplaySpeed:2000,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+              }
+            },
+            {
+                breakpoint: 999,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: false,
+                }
+              },
+              {
+                breakpoint: 699,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: false,
+                }
+              },
+          ]
+      };
   return (
     <>
       <div className='home_campaings_wrapper universal_container'>
@@ -69,8 +112,8 @@ const HomeCampaings = () => {
 </div>
 
 <div className='campaings_card_wrapper'>
-
-    <div className='campaings_card'>
+<Slider {...settings}>
+<div className='campaings_card'>
         <img src={img}/>
         <p>Celebrate your Birthday with the kids and make your celebration more joyous</p>
         <div className='time_div_wrapper'>
@@ -115,8 +158,6 @@ const HomeCampaings = () => {
         </div>
         <button className='donate_now'>DONATE NOW</button>
     </div>
-
-
     <div className='campaings_card'>
         <img src={img3}/>
         <p>Celebrate your Birthday with the kids and make your celebration more joyous</p>
@@ -140,7 +181,6 @@ const HomeCampaings = () => {
         <button className='donate_now'>DONATE NOW</button>
     </div>
 
-
     <div className='campaings_card'>
         <img src={img4}/>
         <p>Celebrate your Birthday with the kids and make your celebration more joyous</p>
@@ -163,6 +203,16 @@ const HomeCampaings = () => {
         </div>
         <button className='donate_now'>DONATE NOW</button>
     </div>
+</Slider>
+   
+
+   
+
+
+   
+
+
+   
 </div>
 <div className='show_button'>SHOW MORE CAMPAIGNS</div>
       </div>

@@ -156,7 +156,8 @@ left: 12px;
 .campaings_tab{
     width: fit-content;
     padding: 20px 0px;
-    width: 150px;
+    width: 110px;
+    min-width: 110px;
     border: 1px solid rgb(195, 196, 199);
     border-radius: 12px;
     display: flex;
@@ -177,7 +178,8 @@ left: 12px;
 .campaings_tab_active{
     width: fit-content;
     padding: 20px 0px;
-    width: 150px;
+    width: 110px;
+    min-width: 110px;
     border: 1px solid rgb(195, 196, 199);
     border-radius: 12px;
     display: flex;
@@ -343,14 +345,14 @@ left: 12px;
     border-radius: 10px;
 }
 .campaings_card_wrapper{
-    display: flex;
+ 
     column-gap: 25px;
     margin-top: 40px;
 }
 .campaings_card{
     width: 100%;
-    max-width: 23%;
-    min-width: 23%;
+    max-width: 95%;
+    min-width: 95%;
     border-radius: 10px;
     background-color: white;
     box-shadow: 5px 5px 10px #ccc;
@@ -468,4 +470,71 @@ left: 12px;
     text-align: center;
     font-size: 13px;
     margin-bottom: 20px;
+}
+
+@media(max-width:1200px){
+    .homeabout_wrapper{
+        flex-direction: column;
+    }
+    .home_about_left{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .home_about_right{
+        display: none;
+    }
+    .donar_wrapper {
+        padding: 70px 0px;
+        width: 100%;
+        max-width: 85%;
+        min-width: 85%;
+        margin-inline: auto;
+        display: grid
+    ;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 25px;
+        justify-items: center;
+        background-color: rgb(56, 128, 213);
+        border-radius: 0px 0px 30px 30px;
+        box-shadow: 0px 8px 10px #ccc;
+    }
+}
+@media(max-width:1099px){
+.banner_content{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    align-items: center;
+}
+.banner_content h1{
+    text-align: center;
+}
+}
+@media(max-width:699px){
+    .campaings_card{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .campaings_card img{
+        height: auto;
+    }
+}
+@media(max-width:490px){
+    .donar_wrapper {
+        padding: 70px 0px;
+        width: 100%;
+        max-width: 95%;
+        min-width: 95%;
+        margin-inline: auto;
+        display: grid
+    ;
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+        justify-items: center;
+        background-color: rgb(56, 128, 213);
+        border-radius: 0px 0px 30px 30px;
+        box-shadow: 0px 8px 10px #ccc;
+    }
 }
