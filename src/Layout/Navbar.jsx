@@ -18,7 +18,7 @@ const Navbar = () => {
                         </div>
                         <div className='nav_links_wrapper'>
                             <NavLink>About Us</NavLink>
-                            <NavLink>How it Works</NavLink>
+                            <NavLink to={'/howitworks'}>How it Works</NavLink>
                             <NavLink>Explore Campaigns</NavLink>
                             <NavLink>Date Monthly</NavLink>
                             <NavLink>Start Campaign</NavLink>

@@ -6,6 +6,7 @@ import HomeCampaings from './HomeCampaings'
 import HomeAbout from './HomeAbout'
 import SocialRecognition from './SocialRecognition'
 import HomeContact from './HomeContact'
+import Happiness from './Happiness'
 const Home = () => {
   return (
     <div style={{
@@ -15,6 +16,7 @@ const Home = () => {
       <Donar/>
       <HomeAbout/>
       <HomeCampaings/>
+      <Happiness/>
       <SocialRecognition/>
       <HomeContact/>
     </div>

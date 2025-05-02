@@ -471,7 +471,149 @@ left: 12px;
     font-size: 13px;
     margin-bottom: 20px;
 }
+.happiness_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.happiness_left{
+    width: 100%;
+    max-width: 55%;
+    min-width: 55%;
+}
+.happiness_left h1{
+    font-size: 28px;
+    font-weight: 600;
+}
+.happiness_left p{
+    font-size: 14px;
+    font-weight: 500;
+    color: grey;
+    margin-top: 20px;
+}
+.happiness_right{
+    width: 100%;
+    max-width: 45%;
+    min-width: 45%;
+}
+.happiness_right img{
+    border-radius: 15px;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.24);
+}
+.happiness_left button{
+    background-color: rgb(56, 128, 213);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    padding: 7px 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.how_works_banner{
+    background-color: rgb(235, 250, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+.how_works_banner h1{
+    font-weight: 600;
+    width: 50%;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+}
+.how_works_banner h6{
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    width: 50%;
+    line-height: 25px;
+}
+.mission_wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0px;
+}
+.mission_div{
+    width: 40%;
+}
+.chartism_div{
+    width: 42%;
+}
+.mission_div h1{
+    color: black;
+    font-size: 28px;
+    font-weight: 500;
+    border-bottom: 4px solid rgb(56, 128, 213);
+    width: fit-content;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 
+}
+.chartism_div h1{
+    color: black;
+    font-size: 28px;
+    font-weight: 500;
+    border-bottom: 4px solid rgb(56, 128, 213);
+    width: fit-content;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+}
+.mission_div  h2{
+    font-size: 17px;
+    color: black;
+    line-height: 30px;
+
+}
+.chartism_div  h2{
+    font-size: 17px;
+    color: black;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.works_photos_wrapper{
+    background-color: rgb(56, 128, 213);
+    padding: 40px 0px 70px 0px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+.works_photos_wrapper h5{
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+}
+.work_photos_div_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    margin-top: 50px;
+}
+.work_photos_div{
+    width: 256px;
+  
+    background-color: white;
+    padding: 20px  20px;
+}
+.work_photos_div img{
+    width: 220px;
+}
+.transform_rotate_right{
+    transform: rotate(12deg)
+}
+.transform_rotate_left{
+    transform: rotate(-12deg)
+}
 @media(max-width:1200px){
     .homeabout_wrapper{
         flex-direction: column;
