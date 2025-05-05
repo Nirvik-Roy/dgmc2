@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import logo from '../assets/939610874_dream.png'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import world from '../assets/world.png'
 import Sidebar from './Sidebar'
 
 const Navbar = () => {
-    const [nav,setnav]=useState(false)
+    const [nav,setnav]=useState(false);
+    const navigate = useNavigate()
     return (
         <>
  <Sidebar nav={nav} setnav={setnav}/>
@@ -13,15 +14,17 @@ const Navbar = () => {
 
                 <div className='nav_wrapper_main universal_container'>
                     <div className='nav_logo_div_wrapper'>
-                        <div className='nav_logo_div'>
+                        <div onClick={(()=>navigate('/'))} className='nav_logo_div'>
                             <img src={logo} />
                         </div>
                         <div className='nav_links_wrapper'>
+                        <NavLink to={'/'}>Home</NavLink>
                             <NavLink>About Us</NavLink>
                             <NavLink to={'/howitworks'}>How it Works</NavLink>
-                            <NavLink>Explore Campaigns</NavLink>
+                            <NavLink to={'/donation'}>Donate Now</NavLink>
+                            {/* <NavLink>Explore Campaigns</NavLink>
                             <NavLink>Date Monthly</NavLink>
-                            <NavLink>Start Campaign</NavLink>
+                            <NavLink>Start Campaign</NavLink> */}
                         </div>
                     </div>
                     <i onClick={(()=>{setnav(!nav)})} class="fa-solid fa-bars-staggered"></i>

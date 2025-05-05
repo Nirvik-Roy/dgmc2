@@ -14,10 +14,12 @@ const DonationBanner = () => {
       <div className='donation_details_Wrapper universal_container'>
         <h1>
         Urgent: Help Shruthi Provide shelter for 350+ rescued animals</h1>
-        <div style={{
+        <div className='donation_goal_wrapper' style={{
             display:'flex',
             justifyContent:'space-between',
-            alignItems:'center'
+            alignItems:'center',
+            flexWrap:'wrap',
+            rowGap:'0px'
         }}>
         <h2>₹1,691,715</h2>
         <h5>raised out of <span style={{

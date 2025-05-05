@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import img from '../assets/nathan-dumlao-Xavq7lKj5j8-unsplash.jpg'
 import img2 from '../assets/photo-1542810634-71277d95dcbb.avif'
 import img3 from '../assets/photo-1567001766755-3a3775614445.avif'
+import { useNavigate } from 'react-router-dom';
 const Banner = () => {
   var settings = {
     dots: false,
@@ -18,6 +19,7 @@ const Banner = () => {
     autoplay:true,
     autoplaySpeed:2000
   };
+  const navigate = useNavigate()
   return (
     <>
    <Slider {...settings}>
@@ -31,7 +33,7 @@ const Banner = () => {
         <div className='banner_content'>
         <h1><span>Make your Birthdays more special With  </span> 
         Heartfelt Blessings  from the ELderly Parents </h1>
-        <button>DONATE NOW</button>
+        <button onClick={(()=>navigate('/donation'))}>DONATE NOW</button>
         </div>
             
         </div>

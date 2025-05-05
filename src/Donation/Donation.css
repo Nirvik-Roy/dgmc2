@@ -62,6 +62,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
 }
 .share_wrappper{
     margin-top: 25px;
@@ -80,7 +82,352 @@
     justify-content: flex-start;
     align-items: center;
     column-gap: 25px;
+    margin-left: auto;
 }
 .share_logos_div56875 img{
     width: 30px;
+}
+.donation_campain_wrapper{
+    display: flex;
+    justify-content: space-between;
+   background-color: #f7fdfd;
+}
+.left_donation_campain{
+    width: 100%;
+    max-width: 58%;
+    min-width: 58%;
+
+   
+    padding-bottom: 50px;
+  
+ 
+}
+.left_donation_first_div{
+    box-shadow: 0 15px 30px 0 hsla(0, 0%, 48%, 0.146);
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px ;
+}
+.right_donation_campain{
+    width: 100%;
+    max-width: 40%;
+    min-width: 40%;
+    border-radius: 15px;
+   background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    height: 100%;
+    box-shadow: 0 15px 30px 0 hsla(0, 0%, 48%, 0.146);
+}
+.right_donation_campain h3{
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+
+}
+.right_donation_campain h5{
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    margin: 5px 0px;
+    color: #9b9a9a;
+}
+.campainger_wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 8px;
+    flex-wrap: wrap;
+}
+.campain_img_wrapper{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   
+}
+.campain_img_wrapper img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.campain_names_wrapper p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #9f9f9f;
+}
+.campain_names_wrapper h5{
+    font-weight: 400;
+    font-size: 16px;
+   
+}
+.location_donation_campain_wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 5px;
+    margin-top: 5px;
+}
+.location_donation_campain_wrapper h6{
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+}
+.about_campain_head{
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+    margin-top: 105px;
+}
+.video_div_campain{
+    width: 100%;
+    height: 58vh;
+    margin-top: 30px;
+}
+.video_campain{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video_para{
+     font-size: 14px;
+     font-weight: 500;
+     color: black;
+     font-style: italic;
+     margin: 20px 0px;
+}
+.campaing_img_div_56856{
+    width: 100%;
+    height: 60vh;
+    margin-top: 30px;
+}
+.campaing_img_div_56856 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.donation_campaign_names {
+ padding: 20px;
+box-shadow: 0 15px 30px 0 hsla(0, 0%, 48%, 0.146);
+ border-radius: 15px;
+ margin-top: 30px;
+} 
+.donation_campaign_names h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+}
+.donars_tabs_wrapper{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px #b8b7ba;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.donars_btn_active{
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(56, 128, 213);
+    padding: 7px 60px;
+    border-radius: 5px;
+    
+}
+.donars_btn{
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+    background-color: #f9f9fb;
+    padding: 7px 60px;
+    border-radius: 5px;
+   
+}
+.donor_names_Wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.left_Donar_names_wrapper{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    overflow-x: scroll;
+}
+.right_Donar_names_wrapper{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    overflow-x: scroll;
+}
+.left_donar_names{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+.left_donar_names h5{
+ font-weight: 500;
+ font-size: 15px;
+ text-transform: uppercase;
+ width: 150px;
+ min-width: 150px;
+ word-wrap: break-word;
+ word-break: break-all;
+}
+.left_donar_names h2{
+    color: rgb(56, 128, 213);
+    font-weight: 500;
+    font-size: 18px;
+    width: 200px;
+    min-width: 200px;
+
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.frequently_head{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin: 40px;
+}
+.accordion-item{
+    box-shadow: 0 15px 30px 0 hsla(0, 0%, 48%, 0.146) !important;
+    margin-bottom: 20px;
+    border: none !important;
+    border-radius: 15px !important;
+  
+    
+}
+.accordion-header{
+    border-radius: 15px !important;
+    
+}
+.accordion-button{
+    border-radius: 15px !important;
+}
+.donate_amount_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+
+}
+.donate_amount_wrapper p {
+   font-size: 17px;
+   font-weight: 500;
+   padding: 5px 35px;
+   border: 1px solid #ccc;
+   color: black;
+   width: fit-content;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.2s linear all;
+}
+.donate_amount_wrapper p:hover{
+    background-color: rgb(56, 128, 213);
+    color: white;
+}
+.donate_amount_wrapper p:nth-child(1){
+    background-color: rgb(56, 128, 213);
+    color: white;
+}
+.amount_label{
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0px;
+}
+.amount_input{
+    display: block;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+.minimun_para{
+    font-size: 12px;
+}
+.amount_form_main{
+    margin-top: 15px;
+}
+.payment_img_wrapper{
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+}
+.payment_img_wrapper img{
+    width: 100%;
+    height: 100%;
+}
+.donate_btn565236 {
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 15px 0px;
+    background-color: #3880d5;
+    border: none;
+    margin-top: 20px;
+}
+.ftco-section{
+    padding: 0px 0px;
+}
+@media(max-width:1199px){
+    .donation_campain_wrapper{
+        flex-direction: column-reverse;
+        row-gap: 50px;
+    }
+    .right_donation_campain{
+        width: 100%;
+        max-width: 70%;
+        min-width: 70%;
+        margin-inline: auto;
+    }
+    .left_donation_campain{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+@media(max-width:699px){
+    .right_donation_campain {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        margin-inline: auto;
+    }
+    .donars_tabs_wrapper{
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+    }
+    .donars_btn_active{
+        width: 100%;
+        text-align: center;
+    }
+    .donars_btn{
+        width: 100%;
+        text-align: center;
+    }
+    .left_Donar_names_wrapper{
+        width: 100%;
+    }
+    .right_Donar_names_wrapper{
+        width: 100%;
+    }
+    .donor_names_Wrapper{
+        flex-direction: column;
+        row-gap: 20px;
+    }
 }

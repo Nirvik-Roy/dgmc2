@@ -1,6 +1,8 @@
 import React from 'react'
 import logo from '../assets/939610874_dream.png'
+import { useNavigate } from 'react-router-dom'
 const Sidebar = ({nav,setnav}) => {
+  const navigate = useNavigate()
   return (
     <>
       <div className={nav ? 'nav_responsive_wrapper_active' :'nav_responsive_wrapper'}>
@@ -17,7 +19,9 @@ const Sidebar = ({nav,setnav}) => {
               rowGap:'22px',
              
             }}>
-            <div className='d-flex justify-content-start align-items-center' style={{
+            <div className='d-flex justify-content-start align-items-center' onClick={(()=>{
+              navigate('/')
+            })} style={{
               color:'white',
               columnGap:'10px'
             }}>
@@ -27,7 +31,7 @@ const Sidebar = ({nav,setnav}) => {
             <h1>Home</h1>
             </div>
 
-            <div className='d-flex justify-content-start align-items-center' style={{
+            <div className='d-flex justify-content-start align-items-center'  style={{
               color:'white',
               columnGap:'10px'
             }}>
@@ -38,14 +42,16 @@ const Sidebar = ({nav,setnav}) => {
             </div>
            
 
-            <div className='d-flex justify-content-start align-items-center' style={{
+            <div className='d-flex justify-content-start align-items-center' onClick={(()=>{
+              navigate('/howitworks')
+            })} style={{
               color:'white',
               columnGap:'10px'
             }}>
             <i class="fa-solid fa-bars-progress" style={{
             fontSize:'20px'
            }}></i>
-               <h1>Our Projects</h1>
+               <h1>How It Works</h1>
             </div>
          
             <div className='d-flex justify-content-start align-items-center' style={{
@@ -58,14 +64,16 @@ const Sidebar = ({nav,setnav}) => {
                <h1>Gallery</h1>
             </div>
            
-            <div className='d-flex justify-content-start align-items-center' style={{
+            <div className='d-flex justify-content-start align-items-center' onClick={(()=>{
+              navigate('/donation')
+            })} style={{
               color:'white',
               columnGap:'10px'
             }}>
            <i class="fa-solid fa-handshake-angle" style={{
             fontSize:'20px'
            }}></i>
-               <h1>Join As Volunteer</h1>
+               <h1>Donate Now</h1>
             </div>
 
             <div className='d-flex justify-content-start align-items-center' style={{
