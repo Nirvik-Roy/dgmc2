@@ -480,8 +480,8 @@ left: 12px;
 }
 .happiness_left{
     width: 100%;
-    max-width: 55%;
-    min-width: 55%;
+    max-width: 50%;
+    min-width: 50%;
 }
 .happiness_left h1{
     font-size: 28px;
@@ -654,6 +654,24 @@ left: 12px;
 }
 }
 @media(max-width:899px){
+    .happiness_wrapper{
+        flex-direction: column-reverse;
+        row-gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+    .happiness_right{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+
+    }
+    .happiness_left{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+
+    }
     .mission_wrapper{
         flex-direction: column;
         row-gap: 30px;
